@@ -9,5 +9,13 @@ const args = process.argv;
 if (args.length > 2){
     const utente = args[2];
     console.log(`User role: ${utente}`);    
-}
 
+    if(utente === 'admin' && pin === '2715'){
+        console.log('Welcome Admin');
+        
+    } else {
+        console.log("Access restricted");
+    }
+} else {
+    console.log("no data provided");
+}
